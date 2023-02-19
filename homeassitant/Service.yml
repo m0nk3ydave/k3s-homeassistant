@@ -1,4 +1,3 @@
-github.com/m0nk3ydave/k3s-homeassistant.git---
 apiVersion: v1
 kind: Service
 metadata:
