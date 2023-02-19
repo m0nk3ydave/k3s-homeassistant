@@ -1,0 +1,14 @@
+github.com/m0nk3ydave/k3s-homeassistant.git---
+apiVersion: v1
+kind: Service
+metadata:
+  name: homeassistant-tcp
+spec:
+  selector:
+    app: homeassistant
+  type: LoadBalancer
+  loadBalancerIP: 10.0.0.220
+  ports:
+    - port: 443
+      name: hassio-gui-api
+      targetPort: 8123
