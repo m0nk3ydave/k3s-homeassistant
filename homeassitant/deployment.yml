@@ -33,4 +33,4 @@ spec:
       volumes:
         - name: homeassistant-data-volume
           persistentVolumeClaim:
-            claimName: pvc-nfs-kubedata-homeassistant-data
+            claimName: longhorn-homeassistant-registry-pvc
