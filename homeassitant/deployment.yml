@@ -30,8 +30,6 @@ spec:
           volumeMounts:
             - name: homeassistant-data-volume
               mountPath: /config
-          ports:
-            - containerPort: 80
       volumes:
         - name: homeassistant-data-volume
           persistentVolumeClaim:
